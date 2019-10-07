@@ -76,6 +76,7 @@ Subscriptores.propTypes = {
   firestore: PropTypes.object.isRequired,
   suscriptores: PropTypes.array
 };
+
 export default compose(
   firestoreConnect([{ collection: "subscriptores" }]),
   connect((state, props) => ({
